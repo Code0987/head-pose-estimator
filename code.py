@@ -123,7 +123,8 @@ def main():
             frame, stabile_pose[0], stabile_pose[1], color=(128, 255, 128))
 
     # Show preview.
-    cv2.imshow("Preview", frame)
+    cv2.imwrite('pose-preview.jpg', frame)
+    #cv2.imshow("Preview", frame)
     #if cv2.waitKey(10) == 27:
     #    break
 
